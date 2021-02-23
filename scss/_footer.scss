@@ -1,0 +1,56 @@
+.site-footer {
+    background-color: #f3f3f3;
+
+    &__text {
+        color: $fade-text;
+        max-width: 43rem;
+        font-family: 'Museo-Regular', sans-serif;
+        line-height: 2.4rem;
+    }
+
+    &__logo {
+        max-width: 19rem;
+
+        &--small {
+            max-width: 13rem;
+        }
+    }
+
+    #menu-main-menu-2 {
+        column-count: 2;
+        max-width: 32rem;
+
+        .menu-item {
+            margin-bottom: 1rem;
+            white-space: nowrap;
+
+            a {
+                font-family: 'Museo-Heavy', sans-serif;
+            }
+        }
+    }
+
+    &__credits {
+        padding: 3rem 0;
+        @include display-flex(row, unset, center);
+
+        @media screen and(max-width: $bp-medium) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+        }
+
+        border-top: 1px solid rgba(0, 0, 0, .1);
+
+        svg path {
+            fill: #c2c2c2;
+        }
+
+        .social__media__list {
+            @include display-flex(row, space-between, center);
+            margin: 0 auto;
+            width: 16rem;
+        }
+    }
+}

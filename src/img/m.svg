@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="no"?>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg height="54" width="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+    <circle class="circle" cx="27" cy="27" r="27" fill="#333" fill-opacity="0.7" />
+    <circle class="circle" cx="27" cy="27" r="21" fill="#333"/>
+</svg>

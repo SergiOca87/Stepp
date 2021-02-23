@@ -1,0 +1,29 @@
+@import "settings";
+
+
+@import '../node_modules/foundation-sites/scss/foundation';
+
+
+/* @group FOUNDATION */
+@include foundation-global-styles;
+@include foundation-xy-grid-classes;
+
+@include foundation-typography;
+//@include foundation-forms;
+//@include foundation-button;
+@include foundation-visibility-classes;
+//@include foundation-float-classes;
+@include foundation-flex-classes;
+/* @end */
+
+@import 'aos';
+@import 'base';
+@import 'header';
+@import 'slick';
+@import 'footer';
+@import 'homepage';
+@import 'about';
+@import 'team-single';
+@import 'contact';
+@import 'news';
+@import 'properties';

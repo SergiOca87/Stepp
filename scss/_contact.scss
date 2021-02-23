@@ -1,0 +1,164 @@
+.contact {
+
+    @media screen and (max-width: $bp-large) {
+        margin-top: 5rem;
+    }
+
+    &__hero {
+        height: 38rem;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+    &__cards__wrap {
+       
+        .cell.large-4.medium-6 {
+            border-right: 1px solid rgba(0, 0, 0, .1);
+
+            @media screen and (max-width: $bp-medium) {
+                border-right: 0;
+            }
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+
+        .cell {
+            &:not(:last-child) {
+                border-right: 1px solid rgba(0, 0, 0, .1);
+
+                @media screen and (max-width: $bp-large) {
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+    &__card {
+        padding: 2rem;
+        margin: 0 auto;
+        max-width: 40rem;
+       
+        @media screen and (max-width: $bp-large) {
+            max-width: 50rem;
+            padding-left: 10rem;
+            border-right: none;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+
+        @media screen and (max-width: $bp-medium) {
+            padding: 2rem;
+        }
+        
+        &__title {
+            font-family: 'Chivo', sans-serif;
+            font-size: 3rem;
+        }
+
+        &__address {
+            font-family: 'Museo-Heavy', sans-serif;
+            max-width: 26rem;
+            line-height: 2.4rem;
+        }
+
+        &__inner__title {
+            line-height: 2.4rem;
+            margin-bottom: 0;
+        }
+
+        &__phone {
+            line-height: 2.4rem;
+            font-size: 1.8rem;
+        }
+
+        &__email {
+            font-size: 1.8rem;
+            font-family: 'Museo-Heavy', sans-serif;
+        }
+
+        &__link {
+            font-family: 'Chivo', sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: -0.20px;
+
+            &:hover {
+                color: $light-blue;
+            }
+        }
+    }
+
+    &__title {
+
+    }
+
+    &__text {
+        max-width: 56rem;
+    }
+
+    &__form__cell {
+
+        @media screen and (max-width: $bp-large) {
+            max-width: 50rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__form__wrap {
+
+        @media screen and (max-width: $bp-large) {
+            margin-top: 5rem !important;
+        }
+
+        input, textarea{
+            height: 6.5rem;
+            max-width: 49rem;
+            background-color: #eaedf0;
+            color: #000;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            border: none;
+            resize: none;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            padding: 0 2rem;
+
+            &:focus {
+                -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.4);
+                box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.4);
+                border: none;
+                background-color: #eaedf0;
+            }
+        }
+
+        textarea {
+            padding: 2rem;
+            height: 13.5rem;
+        }
+
+        input[type='submit']{
+            padding: 1.6rem 3.5rem;
+            letter-spacing: 0.5px;
+            -webkit-transition: all 300ms;
+            -o-transition: all 300ms;
+            transition: all 300ms;
+            background-color: transparent;
+            font-size: 1.8rem;
+            border-radius: 3.6rem;
+            border: 2px solid $light-blue;
+            width: initial;
+            color: #fff;
+            cursor: pointer;
+            
+            &:hover {
+				background-color: $light-blue;
+				color: #fff;
+			}
+        }
+    }
+
+    .wpcf7-response-output {
+        color: #fff;
+    }
+}
